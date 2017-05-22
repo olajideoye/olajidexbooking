@@ -1,0 +1,81 @@
+.hero {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin-top: -1.75rem;
+  text-align: center;
+
+  @include screen-breakpoint('md') {
+    margin-top: -3rem;
+  }
+
+  @include screen-breakpoint('lg') {
+    margin-top: -3.5rem;
+  }
+
+  @include screen-breakpoint('xl') {
+    margin-top: -4rem;
+  }
+
+  @include screen-breakpoint('xxl') {
+    margin-top: -4.5rem;
+  }
+}
+
+.hero-headline {
+  width: 85%;
+  margin: 0 auto .75rem;
+  font-size: 1.5625rem;
+  line-height: 1.12;
+
+  @include screen-breakpoint('md') {
+    width: 89.5%;
+    margin-bottom: 1.125rem;
+    font-size: 2.75rem;
+  }
+
+  @include screen-breakpoint('lg') {
+    max-width: 60rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+  }
+
+  @include screen-breakpoint('xl') {
+    max-width: 70rem;
+    font-size: 4rem;
+  }
+
+  @include screen-breakpoint('xxl') {
+    max-width: 80rem;
+    margin-bottom: 1.75rem;
+    font-size: 4.5rem;
+  }
+}
+
+.hero-text {
+  width: 87.5%;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: .01em;
+
+  @include screen-breakpoint('md') {
+    width: 72%;
+    font-size: 1.75rem;
+  }
+
+  @include screen-breakpoint('lg') {
+    max-width: 50rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  @include screen-breakpoint('xl') {
+    font-size: 2.25rem;
+  }
+
+  @include screen-breakpoint('xxl') {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+  position: absolute; // For (mobile) browsers that don't support position: fixed
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $footer-padding;
+  color: $footer-color;
+  font-size: $footer-font-size-xs;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: -.0167em;
+
+  @include screen-breakpoint('xs') {
+    letter-spacing: 0;
+  }
+
+  @include screen-breakpoint('md') {
+    font-size: $footer-font-size-md;
+    padding: $footer-padding-md;
+  }
+
+  @include screen-breakpoint('lg') {
+    font-size: $footer-font-size-lg;
+    padding: $footer-padding-lg;
+  }
+
+  @include screen-breakpoint('xl') {
+    font-size: $footer-font-size-xl;
+  }
+
+  a {
+    &,
+    &:active,
+    &:visited {
+      color: $footer-link-color;
+      text-decoration: none;
+      padding-bottom: 2px;
+      border-bottom: 1px solid $brand-dark-blue;
+      transition: color, border-color ease-in .15s;
+    }
+
+    &:hover,
+    &:focus {
+      color: $footer-link-hover-color;
+      cursor: pointer;
+      border-bottom-color: $brand-light-blue;
+    }
+
+    @include screen-breakpoint('md') {
+      border-bottom-width: 2px;
+    }
+  }
+}

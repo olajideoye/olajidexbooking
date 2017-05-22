@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $default-font;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  color: $text-color;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: $site-bg;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: $selection-bg;
+  color: $selection-color;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header,
+footer,
+section {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: $headings-color;
+  font-family: inherit;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1rem;
+  line-height: $default-line-height;
+  margin: 0 0 1rem;
+}
+

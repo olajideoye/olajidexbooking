@@ -1,0 +1,67 @@
+// Colors
+$brand-dark-blue: #003580;
+$brand-light-blue: #009FE2;
+$brand-yellow: #FEBA02;
+$white: #fff;
+
+
+$text-color: #7C90A6;
+$headings-color: #000207;
+$text-red: #D0011B;
+$text-muted: #9b9b9b;
+
+$site-bg: transparentize($brand-yellow, .8);
+$selection-color: $white;
+$selection-bg: transparentize($brand-dark-blue, .5);
+
+
+// Fonts
+$default-font-size: 16px;
+$default-line-height: 20 / 16;
+$default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+
+
+// Breakpoints
+$breakpoint-xxs-min: (320px / $default-font-size) * 1em;  // Small phones
+$breakpoint-xs-min: (480px / $default-font-size) * 1em;   // Phones
+$breakpoint-sm-min: (600px / $default-font-size) * 1em;   // Small tablets and phablets
+$breakpoint-md-min: (768px / $default-font-size) * 1em;   // Tablets
+$breakpoint-lg-min: (1000px / $default-font-size) * 1em;  // Small desktop
+$breakpoint-xl-min: (1300px / $default-font-size) * 1em;  // Desktop
+$breakpoint-xxl-min: (1600px / $default-font-size) * 1em; // Large desktop
+
+$breakpoint-xxs-max: ($breakpoint-xs-min - .01);
+$breakpoint-xs-max: ($breakpoint-sm-min - .01);
+$breakpoint-sm-max: ($breakpoint-md-min - .01);
+$breakpoint-md-max: ($breakpoint-lg-min - .01);
+$breakpoint-lg-max: ($breakpoint-xl-min - .01);
+$breakpoint-xl-max: ($breakpoint-xxl-min - .01);
+
+
+// Globals
+
+$container-padding: 1rem;
+$container-padding-md: 2rem;
+$container-padding-lg: 2.5rem;
+
+// Intro
+$intro-bg: $brand-dark-blue;
+
+
+// Section
+$section-bg: $white;
+
+
+// Footer
+$footer-color: $text-muted;
+$footer-font-size-xs: .75rem; // 12px
+$footer-font-size-md: 1.125rem; // 18px
+$footer-font-size-lg: 1.25rem; // 20px
+$footer-font-size-xl: 1.375rem; // 22px
+
+$footer-padding: 0 $container-padding .75rem;
+$footer-padding-md: 0 $container-padding-md 1.5rem;
+$footer-padding-lg: 0 $container-padding-lg 2rem;
+
+$footer-link-color: darken($footer-color, 5%);
+$footer-link-hover-color: darken($footer-link-color, 8.5%);

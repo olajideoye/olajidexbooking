@@ -1,0 +1,110 @@
+.logo-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3.125rem;
+  margin-top: -3.125rem;
+
+  @include screen-breakpoint('sm') {
+    height: 5rem;
+    margin-top: -5rem;
+  }
+
+  @include screen-breakpoint('md') {
+    height: 6.25rem;
+    margin-top: -6.25rem;
+  }
+}
+.logo {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  margin: 0 auto;
+}
+
+.logo-letter {
+  height: 100%;
+  opacity: 0;
+}
+
+.logo-full {
+  display: block;
+  width: auto;
+  height: 2.5rem;
+  margin-top: .3125rem;
+
+  @include screen-breakpoint('sm') {
+    height: 4rem;
+    margin-top: .5rem;
+  }
+
+  @include screen-breakpoint('md') {
+    height: 5rem;
+    margin-top: .625rem;
+  }
+}
+
+.animation-1 {
+  .logo-letter {
+    animation: slideUpAndFadeIn 1s ease-out, fullOpacity 1s 1s linear, scaleDownFadeOut .3s 2s ease-in;
+  }
+  .logo-full {
+    animation: noOpacity 2s linear, scaleUpFadeIn .3s 2s ease-in;
+  }
+}
+
+
+@keyframes slideUpAndFadeIn {
+  0% {
+    margin-top: 30vh;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fullOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes noOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleDownFadeOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleUpFadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
