@@ -3,6 +3,8 @@
 
 I set up this project because I would ♥ to work at [Booking.com](https://booking.com). I do hope it's received in good faith and that I'm not breaking any Copyright rules. 
 
+It features a small intro animation for the Booking.com brand and a message stating that I'll love to work there
+
 You can find it here [olajidexbooking.surge.sh](https://olajidexbooking.surge.sh)
 
 ## Setup
