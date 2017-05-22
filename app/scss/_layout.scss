@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  padding: $container-padding;
+
+  @include screen-breakpoint('md') {
+    padding: 2rem $container-padding-md;
+  }
+
+  @include screen-breakpoint('lg') {
+    padding: 2rem $container-padding-lg;
+  }
+}

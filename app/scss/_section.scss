@@ -1,0 +1,22 @@
+.section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: $section-bg;
+  z-index: 0;
+}
+
+.section-logo {
+  display: inline-block;
+  width: auto;
+  height: 1.5em;
+
+  @include screen-breakpoint('md') {
+    height: 2.5rem;
+  }
+
+  @include screen-breakpoint('lg') {
+    height: 2rem;
+  }
+}

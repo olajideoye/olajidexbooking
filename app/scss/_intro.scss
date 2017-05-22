@@ -1,0 +1,8 @@
+.intro {
+  position: relative;
+  height: 7rem; // A (rather incomplete) fallback for browsers that don't support the vh units. Opera Mini & UC browser I see you
+  height: 100vh;
+  margin-bottom: 100vh;
+  background: $intro-bg;
+  z-index: 1;
+}

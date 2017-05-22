@@ -2,53 +2,10 @@
 @import "mixins";
 @import "reset";
 @import "typography";
+@import "layout";
+@import "intro";
 @import "logo";
 @import "hero";
+@import "section";
 @import "footer";
-
-.intro,
-.section {
-  width: 100%;
-  padding: $container-padding;
-
-  @include screen-breakpoint('md') {
-    padding: 2rem $container-padding-md;
-  }
-
-  @include screen-breakpoint('lg') {
-    padding: 2rem $container-padding-lg;
-  }
-}
-
-.intro {
-  position: relative;
-  height: 7rem;
-  height: 100vh;
-  margin-bottom: 100vh;
-  background: $intro-bg;
-  z-index: 1;
-}
-
-.section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: $section-bg;
-  z-index: 0;
-}
-
-.section-logo {
-  display: inline-block;
-  width: auto;
-  height: 1.5em;
-
-  @include screen-breakpoint('md') {
-    height: 2.5rem;
-  }
-
-  @include screen-breakpoint('lg') {
-    height: 2rem;
-  }
-}
-
+@import "animations";
