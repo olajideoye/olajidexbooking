@@ -5,6 +5,9 @@
   .logo-full {
     animation: noOpacity 2s linear, scaleUpFadeIn .3s 2s ease-in;
   }
+  .intro-message {
+    animation: noOpacity 3s linear, fadeIn 1.5s 3s ease-out;
+  }
 }
 
 @keyframes slideUpAndFadeIn {

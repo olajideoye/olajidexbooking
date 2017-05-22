@@ -6,3 +6,27 @@
   background: $intro-bg;
   z-index: 1;
 }
+
+.intro-message {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, .75);
+  font-size: .75rem;
+
+  @include screen-breakpoint('sm') {
+    font-size: 1rem;
+  }
+
+  @include screen-breakpoint('md') {
+    bottom: 2%;
+    font-size: 1.125rem;
+  }
+
+  @include screen-breakpoint('lg') {
+    bottom: 3%;
+    font-size: 1.375rem;
+  }
+}
